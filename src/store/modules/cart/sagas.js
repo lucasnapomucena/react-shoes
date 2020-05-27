@@ -31,7 +31,6 @@ function* addToCart({ id }) {
       amount: 1,
       priceFormatted: formatPrice(response.data.price),
     };
-
     yield put(addToCartSuccess(data));
     history.push('/cart');
   }
